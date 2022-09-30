@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Personal Website</title>
+    <author id="name">Kihyun Park</author>
 </head>
 <body>
-    
+    <div style="display: flex; justify-content: right; border-style: solid;">
+        <button class="button"><a href="#about"><h1>About</h1></a></button>
+        <button class="button"><a href="#work"><h1>Work</h1></a></button>
+        <button class="button"><a href="#contact"><h1>Contact</h1></a></button>
+        <button class="button"><a target="_blank"href="http://www.patience-is-a-virtue.org/"><h3>Trust me</h3></a></button>
+    </div>
+
+    <img src="image.png" alt="Best Moment in Anime" height="350"/>
+
+    <form onsubmit="javascript:alert('If you typed Code Geass you the goat');">
+        <label>What anime is the above image from?: </label>
+        <input type="text" id="anime">
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+
+    <div style="display: grid; border-style: solid;">
+        <h2 id="about">About</h2>
+        <h4>Hello! I'm Kihyun Park, a junior studying EECS at UC Berkeley. I moved to California after finishing 2nd grade in Korea, and hope to work in SWE after graduation.<h4>
+        <h3>Skills include: LaTeX, C, Java, Python, CSS, HTML</h3>
+        <br>
+        <h2 id="work">Work</h2>
+        <h4>Currently I'm working on a project for CS186 where we build a database system from scratch. We use Java to construct a full B+ Tree data fetch and store system.</h4>
+        <br>
+        <h2 id="contact">Contact</h2>
+        <h5>khpark970@berkeley.edu</h5>
+        <h6>760-879-2883</h6>
+    </div>
 </body>
 </html>
